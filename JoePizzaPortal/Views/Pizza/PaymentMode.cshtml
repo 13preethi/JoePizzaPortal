@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "PaymentMode";
+}
+
+<h2>Payment Mode</h2>
+<h3> @TempData["Type"]</h3>
+<h3>Total Amount: Rs.@ViewBag.TotalAmt</h3>
+
+<p>
+    @Html.ActionLink("Order", "OrderSuccess")
+</p>
+
+
+

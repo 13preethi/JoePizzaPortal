@@ -1,0 +1,36 @@
+﻿@model IEnumerable<JoePizzaPortal.Models.PizzaModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pizza Menu</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Select", "SelectedItem", new { id=item.Id }) 
+           
+        </td>
+    </tr>
+}
+
+</table>

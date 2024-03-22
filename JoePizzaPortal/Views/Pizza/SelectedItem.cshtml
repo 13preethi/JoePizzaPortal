@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "SelectedItem";
+}
+
+<center>
+  <h2>Order Now</h2>
+    <form method="post">
+        <label>Enter Number of Quantity for @TempData["Type"]</label>
+        <input type="number" name="qty" placeholder="Select quantity" required min="1" max="300" /><br />
+        
+        <input type="submit" name="SelectedItem" value="Order Now" />
+    </form>
+    @Html.ActionLink("Pizza Menu", "Index")
+</center>
+
