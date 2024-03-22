@@ -31,12 +31,7 @@ namespace PizzaLibrary
             return pizzalist;
 
         }
-        public Pizza GetPizzaById(int id)
-        {
-
-            Pizza pizza = pizzalist.FirstOrDefault(p => p.Id == id);
-            return pizza;
-        }
+     
 
     }
 }
